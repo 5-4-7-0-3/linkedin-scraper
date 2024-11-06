@@ -64,7 +64,7 @@ node index.js
 
 ```
 
-# This script will do the following:
+This script will do the following:
 
 - Will open LinkedIn and log in with the specified credentials.
 - Go to the main page of LinkedIn and find the user's profile.
@@ -73,13 +73,13 @@ node index.js
 
 ## Logs
 
-# All error messages, as well as the found profile URL and profile image, will be written to the out.log file.
+All error messages, as well as the found profile URL and profile image, will be written to the out.log file.
 
 ## Delays
 
-# The script includes artificial delays between actions to simulate real human actions, which helps avoid blocking or bot checks by LinkedIn.
+The script includes artificial delays between actions to simulate real human actions, which helps avoid blocking or bot checks by LinkedIn.
 
-# CAPTCHA Bypass
+## CAPTCHA Bypass
 If a CAPTCHA is detected, the script will log the message: reCAPTCHA detected. Please solve it manually. To bypass reCAPTCHA, you can use third-party services like 2Captcha, or parse and reuse session cookies.
 
 ## Notes

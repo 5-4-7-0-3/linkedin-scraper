@@ -20,9 +20,8 @@ This script is designed for educational purposes only. Use for unauthorized acce
 
 The project is divided into multiple files for better readability and maintainability:
 
-- login.js: Contains logic for logging in to LinkedIn.
-- profile.js: Contains logic for fetching the profile image.
-- logger.js: Contains the logging functionality.
+- puppeteerActions.js: Contains logic for logging in to LinkedIn and fetching the profile image.
+- utils.js: Contains the logging functionality.
 - index.js: Main script that integrates all modules and runs the automation process.
 
 ## Installation
@@ -47,18 +46,18 @@ npm install
 
 ## Settings
 
-# Before running the script, you need to configure your LinkedIn login credentials:
+Before running the script, you need to configure your LinkedIn login credentials:
 
-1. Open the config.js file and replace the values of the EMAIL and PASSWORD variables with your own data:
+1. Open the config.js file and replace the values ​​of the EMAIL and PASSWORD variables with your own data:
 
 ```bash
-  EMAIL: "your-email@example.com",
-  PASSWORD: "your-password",
+ EMAIL: "your-email@example.com",
+ PASSWORD: "your-password",
 ```
 
 ## Launch
 
-# To run the script, execute the command:
+To run the script, execute the command:
 
 ```bash
 node index.js
@@ -79,6 +78,9 @@ node index.js
 ## Delays
 
 # The script includes artificial delays between actions to simulate real human actions, which helps avoid blocking or bot checks by LinkedIn.
+
+# CAPTCHA Bypass
+If a CAPTCHA is detected, the script will log the message: reCAPTCHA detected. Please solve it manually. To bypass reCAPTCHA, you can use third-party services like 2Captcha, or parse and reuse session cookies.
 
 ## Notes
 

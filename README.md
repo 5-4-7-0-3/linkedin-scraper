@@ -2,11 +2,28 @@
 
 This project automates the process of logging into LinkedIn, searching for a profile URL, and uploading profile pictures. The script uses Puppeteer to simulate browser actions and writes all logs to the `out.log` file.
 
+## Definition
+
+This project is intended to be a hands-on study of using Puppeteer to automate browser actions and manipulate web page data. The script was created for educational purposes and is not intended for commercial use.
+
+## An important note
+
+This script is designed for educational purposes only. Use for unauthorized access or processing of its data without permission may violate the terms of use of LinkedIn or other websites. Please use it appropriately and in accordance with the law.
+
 ## Requirements
 
 - Node.js >= 14
 - Puppeteer
 - File with credentials (login and password)
+
+## File Structure
+
+The project is divided into multiple files for better readability and maintainability:
+
+- login.js: Contains logic for logging in to LinkedIn.
+- profile.js: Contains logic for fetching the profile image.
+- logger.js: Contains the logging functionality.
+- index.js: Main script that integrates all modules and runs the automation process.
 
 ## Installation
 
@@ -32,11 +49,11 @@ npm install
 
 # Before running the script, you need to configure your LinkedIn login credentials:
 
-1. Open the index.js file and replace the values ​​of the EMAIL and PASSWORD variables with your own data:
+1. Open the config.js file and replace the values of the EMAIL and PASSWORD variables with your own data:
 
 ```bash
-const EMAIL = "your-email@example.com";
-const PASSWORD = "your-password";
+  EMAIL: "your-email@example.com",
+  PASSWORD: "your-password",
 ```
 
 ## Launch
@@ -47,6 +64,7 @@ const PASSWORD = "your-password";
 node index.js
 
 ```
+
 # This script will do the following:
 
 - Will open LinkedIn and log in with the specified credentials.
@@ -55,14 +73,16 @@ node index.js
 - Outputs the received information to the out.log file.
 
 ## Logs
+
 # All error messages, as well as the found profile URL and profile image, will be written to the out.log file.
 
 ## Delays
+
 # The script includes artificial delays between actions to simulate real human actions, which helps avoid blocking or bot checks by LinkedIn.
 
 ## Notes
+
 - Use of this script must comply with LinkedIn's terms of use.
-- If CAPTCHA or other protections appear on the page, this script will not be able to bypass them without additional settings, such as integration with CAPTCHA solving services.
 
 ## Contact
 

@@ -30,7 +30,7 @@ npm install
 
 ## Settings
 
-# Before running the script, you need to configure your LinkedIn login credentials:
+Before running the script, you need to configure your LinkedIn login credentials:
 
 1. Open the index.js file and replace the values ​​of the EMAIL and PASSWORD variables with your own data:
 
@@ -41,13 +41,13 @@ const PASSWORD = "your-password";
 
 ## Launch
 
-# To run the script, execute the command:
+To run the script, execute the command:
 
 ```bash
 node index.js
 
 ```
-# This script will do the following:
+This script will do the following:
 
 - Will open LinkedIn and log in with the specified credentials.
 - Go to the main page of LinkedIn and find the user's profile.
@@ -55,10 +55,10 @@ node index.js
 - Outputs the received information to the out.log file.
 
 ## Logs
-# All error messages, as well as the found profile URL and profile image, will be written to the out.log file.
+All error messages, as well as the found profile URL and profile image, will be written to the out.log file.
 
 ## Delays
-# The script includes artificial delays between actions to simulate real human actions, which helps avoid blocking or bot checks by LinkedIn.
+The script includes artificial delays between actions to simulate real human actions, which helps avoid blocking or bot checks by LinkedIn.
 
 ## Notes
 - Use of this script must comply with LinkedIn's terms of use.
